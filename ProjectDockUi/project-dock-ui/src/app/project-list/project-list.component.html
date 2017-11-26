@@ -1,0 +1,8 @@
+<div *ngFor="let project of webService.projects | async" class="card card-outline-primary mb-3 text-center project-card">
+  <div class="card-block">
+    <blockquote ng class="card-blockquote">
+      <p [routerLink]="['/projects', project.name]">{{project.name}}</p>
+      <footer>{{project.description}}</footer>
+    </blockquote>
+  </div>
+</div>

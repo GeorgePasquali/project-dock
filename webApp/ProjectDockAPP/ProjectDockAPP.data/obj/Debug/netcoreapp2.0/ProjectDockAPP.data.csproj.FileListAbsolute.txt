@@ -1,0 +1,11 @@
+D:\Programming Projects\06.10.17-project-dock\project-dock\webApp\ProjectDockAPP\ProjectDockAPP.data\bin\Debug\netcoreapp2.0\ProjectDockAPP.data.deps.json
+D:\Programming Projects\06.10.17-project-dock\project-dock\webApp\ProjectDockAPP\ProjectDockAPP.data\bin\Debug\netcoreapp2.0\ProjectDockAPP.data.runtimeconfig.json
+D:\Programming Projects\06.10.17-project-dock\project-dock\webApp\ProjectDockAPP\ProjectDockAPP.data\bin\Debug\netcoreapp2.0\ProjectDockAPP.data.runtimeconfig.dev.json
+D:\Programming Projects\06.10.17-project-dock\project-dock\webApp\ProjectDockAPP\ProjectDockAPP.data\bin\Debug\netcoreapp2.0\ProjectDockAPP.data.dll
+D:\Programming Projects\06.10.17-project-dock\project-dock\webApp\ProjectDockAPP\ProjectDockAPP.data\obj\Debug\netcoreapp2.0\ProjectDockAPP.data.csprojResolveAssemblyReference.cache
+D:\Programming Projects\06.10.17-project-dock\project-dock\webApp\ProjectDockAPP\ProjectDockAPP.data\obj\Debug\netcoreapp2.0\ProjectDockAPP.data.csproj.CoreCompileInputs.cache
+D:\Programming Projects\06.10.17-project-dock\project-dock\webApp\ProjectDockAPP\ProjectDockAPP.data\obj\Debug\netcoreapp2.0\ProjectDockAPP.data.AssemblyInfoInputs.cache
+D:\Programming Projects\06.10.17-project-dock\project-dock\webApp\ProjectDockAPP\ProjectDockAPP.data\obj\Debug\netcoreapp2.0\ProjectDockAPP.data.AssemblyInfo.cs
+D:\Programming Projects\06.10.17-project-dock\project-dock\webApp\ProjectDockAPP\ProjectDockAPP.data\bin\Debug\netcoreapp2.0\ProjectDockAPP.data.pdb
+D:\Programming Projects\06.10.17-project-dock\project-dock\webApp\ProjectDockAPP\ProjectDockAPP.data\obj\Debug\netcoreapp2.0\ProjectDockAPP.data.dll
+D:\Programming Projects\06.10.17-project-dock\project-dock\webApp\ProjectDockAPP\ProjectDockAPP.data\obj\Debug\netcoreapp2.0\ProjectDockAPP.data.pdb

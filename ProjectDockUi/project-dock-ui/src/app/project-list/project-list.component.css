@@ -1,0 +1,8 @@
+.project-card{
+    border: 1px solid lightskyblue;
+    margin: 20px;
+}
+
+.project-card:hover{
+    background-color: lightcyan;
+}

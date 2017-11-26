@@ -1,0 +1,12 @@
+<div class="my-form">
+  <div class="form-group">
+    <label for="formGroupExampleInput">Name</label>
+    <input type="text" [(ngModel)]="project.name" class="form-control" id="formGroupExampleInput" placeholder="Name">
+  </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput2">Description</label>
+    <input type="text"  [(ngModel)]="project.description" class="form-control" id="formGroupExampleInput2" placeholder="Description">
+  </div>
+
+  <button (click)="post()" class="btn btn-primary" >Click me!</button>
+</div>
