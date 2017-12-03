@@ -1,23 +1,38 @@
+
+<!-- REGISTRATION FORM TEMPLATE -->
 <form [formGroup]="form" (ngSubmit)="onSubmit()">
+
+  <!-- FIRST NAME -->
   <div class="form-group custom-form-margins">
     <label for="usr">First Name:</label>
     <input [ngClass]="{'error': isValid('firstName')}" placeholder="First Name" type="text" class="form-control" id="usr" formControlName="firstName">
   </div>
+
+  <!-- LAST NAME -->
   <div class="form-group custom-form-margins">
     <label for="usr">Last Name:</label>
     <input [ngClass]="{'error': isValid('lastName')}" placeholder="Last Name" type="text" class="form-control" id="usr" formControlName="lastName">
   </div>
+
+  <!-- EMAIL -->
   <div class="form-group custom-form-margins">
     <label for="usr">Email:</label>
     <input [ngClass]="{'error': isValid('email')}" placeholder="Email" type="email" class="form-control" id="usr" formControlName="email">
   </div>
+
+  <!-- PASSWORD -->
   <div class="form-group custom-form-margins">
     <label for="pwd">Password:</label>
     <input [ngClass]="{'error': isValid('password')}" placeholder="Password" type="password" class="form-control" id="pwd" formControlName="password">
   </div>
+
+  <!-- CONFIRM PASSWORD -->
   <div class="form-group custom-form-margins">
     <label for="pwd">Confirm password:</label>
-    <input [ngClass]="{'error': isValid('confirmPassword')}" placeholder="Confirm Password" type="password" class="form-control" id="pwd" formControlName="confirmPassword">
+    <input [ngClass]="{'error': isValid('confirmPassword')}" placeholder="Confirm Password" type="password" class="form-control"
+      id="pwd" formControlName="confirmPassword">
   </div>
+
+  <!-- SUBMIT BUTTON -->
   <button class="btn btn-primary btn-lg custom-form-margins">Register</button>
 </form>
