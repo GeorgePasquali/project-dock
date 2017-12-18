@@ -13,31 +13,39 @@ namespace ProjectDock.Controllers
     public class ProjectsController : Controller
     {
         // private readonly
+        
         static List<Project> projects = new List<Project>{
                 new Project
                 {
-                    name = "GitHub",
-                    description = "The Sourse storage website."
+                    Name = "GitHub",
+                    Description = "The Sourse storage website."
                 },
                 new Project
                 {
-                    name = "Electron",
-                    description = "Cross platform for web applications..."
+                    Name = "Electron",
+                    Description = "Cross platform for web applications..."
                 }
 
             };
-
+        
+        //readonly ApiContext context;
+        /*
+        public ProjectsController( ApiContext context )
+        {
+            this.context = context;
+        }
+        */
         [HttpGet]
         public IEnumerable<Project> Get()
         {
             return projects;
             
         }
-
+        
         [HttpGet("{name}")]
         public IEnumerable<Project> Get(string name)
         {
-            return projects.FindAll(projects => projects.name == name);
+            return projects.FindAll(projects => projects.Name == name);
 
         }
 
@@ -47,5 +55,7 @@ namespace ProjectDock.Controllers
             projects.Add(project);
             return project;
         }
+
+        
     }
 }

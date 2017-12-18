@@ -10,7 +10,9 @@ import { CreateProjectComponent } from './create-project/create-project.componen
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { HomeComponent } from './home/home.component';
 import { SideBarComponent } from './side-bar/side-bar.component';
-import { RegisterComponent } from './register/register.component'
+import { RegisterComponent } from './register/register.component';
+import { AuthService } from "./auth.service";
+import { CanBanBoardComponent } from './can-ban-board/can-ban-board.component';
 
 
 var routes = [
@@ -24,7 +26,7 @@ var routes = [
   },
   {
     path: 'projects/:name',
-    component: ProjectListComponent
+    component: CanBanBoardComponent
   },
   {
     path: 'create',
@@ -45,6 +47,7 @@ var routes = [
     HomeComponent,
     SideBarComponent,
     RegisterComponent,
+    CanBanBoardComponent,
   ],
   imports: [
     BrowserModule,
@@ -53,7 +56,7 @@ var routes = [
     ReactiveFormsModule,
     RouterModule.forRoot(routes)
   ],
-  providers: [WebService],
+  providers: [WebService, AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

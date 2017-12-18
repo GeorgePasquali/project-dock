@@ -8,6 +8,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Microsoft.EntityFrameworkCore;
 
 namespace ProjectDock
 {
@@ -47,11 +48,33 @@ namespace ProjectDock
                 app.UseDeveloperExceptionPage();
             }
 
+
             app.UseCors("Cors");
 
             app.UseAuthentication();
 
             app.UseMvc();
+
+            //var a = app.ApplicationServices.GetService<ApiContext>();
+            //this.SeedData(app.ApplicationServices.GetService<ApiContext>());
+
         }
+/*
+        public void SeedData(ApiContext context)
+        {
+            context.Projects.Add(new Models.Project
+            {
+                name = "GitHub",
+                description = "The Sourse storage website."
+
+            });
+            context.Projects.Add(new Models.Project
+            {
+                name = "Electron",
+                description = "Cross platform for web applications..."
+
+            });
+        }
+*/
     }
 }

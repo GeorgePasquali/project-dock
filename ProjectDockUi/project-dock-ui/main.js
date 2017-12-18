@@ -12,13 +12,15 @@ function createWindow () {
 
   // and load the index.html of the app.
   win.loadURL(url.format({
-    pathname: "localhost:4200/",
-    protocol: 'http:',
+    pathname: path.join(__dirname, 'dist/index.html'),
+    protocol: 'file:',
     slashes: true
   }))
 
-  // Open the DevTools.
-  win.webContents.openDevTools()
+  win.setMenu(null);
+
+  // Open the DevTools. (uncomment only for debug purposes)
+  //win.webContents.openDevTools()
 
   // Emitted when the window is closed.
   win.on('closed', () => {

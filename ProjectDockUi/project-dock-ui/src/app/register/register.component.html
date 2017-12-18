@@ -32,7 +32,9 @@
     <input [ngClass]="{'error': isValid('confirmPassword')}" placeholder="Confirm Password" type="password" class="form-control"
       id="pwd" formControlName="confirmPassword">
   </div>
-
+  <br>
+  <span class="mismatched-pass" *ngIf="form.errors?.mismatchedFields" >Passwords do not match! Please try to retype them.</span>
+  <br>
   <!-- SUBMIT BUTTON -->
   <button class="btn btn-primary btn-lg custom-form-margins">Register</button>
 </form>
